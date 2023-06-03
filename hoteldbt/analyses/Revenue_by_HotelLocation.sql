@@ -13,4 +13,4 @@ from
 on 
     fb.property_id=dh.property_id
 group by 
-    dh.city,fb.property_id;
+    dh.city,fb.PROPERTY_NAME;
