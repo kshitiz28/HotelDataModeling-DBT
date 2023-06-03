@@ -8,3 +8,9 @@ models:
         tests:
           - unique
           - not_null
+  - name: fct_bookings
+    columns:
+    
+      - name: REVENUE_REALIZED
+        tests:
+          - positive_value
