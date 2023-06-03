@@ -2,15 +2,19 @@ version: 2
 
 models:
   - name: dim_hotels
+    description: Dimension Table for HotelDBT project.
     columns:
 
       - name: PROPERTY_ID
+        description: Unique id for the hotels.
         tests:
           - unique
           - not_null
   - name: fct_bookings
+    description: Fact Table for HotelDBT project.
     columns:
     
       - name: REVENUE_REALIZED
+        description: Revenue from the bookings.
         tests:
           - positive_value
