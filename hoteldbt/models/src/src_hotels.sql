@@ -2,7 +2,7 @@ WITH raw_hotels AS (
     SELECT
         *
     FROM
-        HOTELDBT.RAW.RAW_HOTELS
+        {{ source('hoteldbt', 'hotels') }}
 )
 SELECT
     *
