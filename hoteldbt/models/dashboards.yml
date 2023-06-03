@@ -1,0 +1,18 @@
+version: 2
+
+exposures:
+  - name: Executive Dashboard
+    type: dashboard
+    maturity: low
+    url: https://public.tableau.com/app/profile/kshitiz.dhakal/viz/HotelReveneuDashboard/HotelDashboard
+    description: Executive Dashboard about HotelDBT Revenue
+
+
+    depends_on:
+    - ref('fct_bookings')
+    - ref('dim_hotels')
+
+
+    owner:
+      name: Kshitiz Dhakal
+      email: kshitiz.dhakal50@gmail.com
